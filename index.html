@@ -68,8 +68,11 @@
     <meta name="author" content="EasyPlumbing">
     <meta name="robots" content="index, follow">
     <meta name="google-site-verification" content="YOUR_GOOGLE_VERIFICATION_CODE">
+
+     <!-- External Resources -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+     <script src="https://cdn.tailwindcss.com"></script>
     
-    <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
         theme: {
@@ -80,11 +83,15 @@
               light: '#FEFAE0',
               accent: '#DDA15E',
               dark: '#BC6C25',
+            },
+            fontFamily: {
+              sans: ['system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'sans-serif'],
             }
           }
         }
       }
     </script>
+    
   </head>
   <body>
     <div id="root"></div>

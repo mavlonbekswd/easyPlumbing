@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react';
-import { FaTools, FaWater, FaPhoneAlt, FaUserShield, FaBars, FaTimes, FaStar } from 'react-icons/fa';
+import { useState } from 'react';
+import { FaTools, FaWater, FaPhoneAlt,  FaBars, FaTimes, FaStar } from 'react-icons/fa';
 
 const navLinks = [
   { href: '#services', label: 'Services' },
@@ -13,39 +13,8 @@ const navLinks = [
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [ setIsLoading] = useState(true);
+  
 
-  useEffect(() => {
-    // Simulate loading time
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 2000);
-
-    return () => clearTimeout(timer);
-  }, []);
-
-  // if (isLoading) {
-  //   return (
-  //     <div className="fixed inset-0 z-50 flex items-center justify-center bg-light">
-  //       <div className="flex flex-col items-center gap-6">
-  //         {/* Logo Animation */}
-  //         <div className="relative">
-  //           <div className="w-20 h-20 rounded-full border-4 border-accent border-t-transparent animate-spin"></div>
-  //           <FaTools className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-3xl text-accent" />
-  //         </div>
-  //         {/* Loading Text */}
-  //         <div className="flex flex-col items-center gap-2">
-  //           <h2 className="text-2xl font-bold text-secondary">EasyPlumbing</h2>
-  //           <div className="flex gap-1">
-  //             <span className="w-2 h-2 rounded-full bg-accent animate-bounce" style={{ animationDelay: '0ms' }}></span>
-  //             <span className="w-2 h-2 rounded-full bg-accent animate-bounce" style={{ animationDelay: '150ms' }}></span>
-  //             <span className="w-2 h-2 rounded-full bg-accent animate-bounce" style={{ animationDelay: '300ms' }}></span>
-  //           </div>
-  //         </div>
-  //       </div>
-  //     </div>
-  //   );
-  // }
 
   return (
     <header className="relative bg-primary text-light pb-20 overflow-hidden" id="home">

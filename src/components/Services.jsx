@@ -66,6 +66,7 @@ export default function Services() {
               tabIndex={0}
               aria-label={`More about ${s.title}`}
             >
+              
               {/* Badge */}
               {s.badge && (
                 <span className="absolute top-4 right-4 bg-accent text-light text-xs font-bold px-3 py-1 rounded-full shadow animate-fade-in flex items-center gap-1">
@@ -78,6 +79,7 @@ export default function Services() {
               </div>
               <h3 className="text-xl font-bold text-primary mb-2 group-hover:text-accent transition-colors">{s.title}</h3>
               <p className="text-gray-600 text-center">{s.desc}</p>
+              
               {/* Decorative background icon */}
               <div className="absolute left-2 bottom-2 opacity-10 text-6xl text-accent pointer-events-none select-none hidden md:block">
                 {s.icon}

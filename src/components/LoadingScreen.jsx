@@ -34,7 +34,7 @@ export default function LoadingScreen() {
       {/* Decorative Glow */}
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-2/3 h-32 bg-accent/20 blur-2xl rounded-full opacity-70 pointer-events-none" />
       {/* Custom Animations */}
-      <style jsx>{`
+      <style>{`
         .animate-gradient-move {
           background-size: 200% 200%;
           animation: gradientMove 4s ease-in-out infinite;
