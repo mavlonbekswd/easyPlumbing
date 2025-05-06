@@ -3,7 +3,7 @@ import Contact from './Contact';
 import SmartScheduler from './SmartScheduler';
 import { FaEnvelope, FaCalendarCheck } from 'react-icons/fa';
 
-export default function ContactAndBook() {
+const ContactAndBook = () => {
   const [tab, setTab] = useState('contact');
 
   return (
@@ -44,3 +44,4 @@ export default function ContactAndBook() {
     </section>
   );
 } 
+export default ContactAndBook;

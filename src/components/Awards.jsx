@@ -1,5 +1,7 @@
 import { FaTrophy, FaMedal, FaAward, FaStar } from 'react-icons/fa';
 
+
+
 const awards = [
   {
     icon: <FaTrophy />, title: 'Best Plumbing Service', year: '2023', desc: 'Awarded for outstanding service and customer satisfaction.'
@@ -17,7 +19,7 @@ const awards = [
 
 
 
-export default function Awards() {
+const Awards = () => {
   return (
     <section className="relative py-20 bg-gradient-to-br from-light via-white to-accent/10 overflow-hidden" id="awards" data-aos="fade-up">
       <div className="container mx-auto flex flex-col items-center">
@@ -38,3 +40,5 @@ export default function Awards() {
     </section>
   );
 } 
+
+export default Awards;

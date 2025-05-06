@@ -1,6 +1,6 @@
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaUser, FaCalendarAlt, FaClock, FaTools, FaStar, FaShieldAlt, FaCertificate } from 'react-icons/fa';
 
-export default function Contact() {
+const Contact = () => {
   return (
     <section className="relative py-[-20px] bg-light to-accent/10 overflow-hidden" id="contact" data-aos="fade-up">
       <div className="container mx-auto max-w-4xl rounded-3xl shadow-xl bg-white/90 p-8 md:p-16 flex flex-col md:flex-row gap-12 items-center animate-fade-in">
@@ -96,3 +96,5 @@ export default function Contact() {
     </section>
   );
 } 
+
+export default Contact;

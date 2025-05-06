@@ -30,7 +30,7 @@ const faqs = [
   { q: 'Do you replace old pipes?', a: 'Yes, we offer modern, durable pipe replacement for your home or business.', icon: <FaBolt /> },
 ];
 
-export default function FAQ() {
+const FAQ = () => {
   const [open, setOpen] = useState(null);
   const [searchTerm, setSearchTerm] = useState('');
   const [showVideo, setShowVideo] = useState(null);
@@ -164,3 +164,4 @@ export default function FAQ() {
     </section>
   );
 } 
+export default FAQ;

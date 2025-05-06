@@ -11,7 +11,8 @@ const navLinks = [
   { href: '#contact', label: 'Contact' },
 ];
 
-export default function Header() {
+const Header = () => {
+
   const [menuOpen, setMenuOpen] = useState(false);
   
 
@@ -143,10 +144,4 @@ export default function Header() {
     </header>
   );
 }
-
-// Tailwind custom animations (add to your global CSS if not present):
-// .animate-spin-slow { animation: spin 3s linear infinite; }
-// .animate-float { animation: float 3s ease-in-out infinite; }
-// .animate-fade-in { animation: fadeIn 2s ease-in; }
-// @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-12px); } }
-// @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } } 
+export default Header;

@@ -10,7 +10,7 @@ const links = [
   { href: '#contact', label: 'Contact' },
 ];
 
-export default function Footer() {
+const Footer = () => {
   return (
     <footer className="relative bg-secondary text-light pt-16 pb-8 mt-12">
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-8 px-4">
@@ -52,3 +52,4 @@ export default function Footer() {
     </footer>
   );
 } 
+export default Footer;

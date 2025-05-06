@@ -1,5 +1,7 @@
 import { FaUserFriends, FaCheckCircle, FaAward } from 'react-icons/fa';
+ 
 
+const About = () => {
 const highlights = [
   '20+ Years of Experience',
   'Family-Owned & Operated',
@@ -7,7 +9,7 @@ const highlights = [
   'Community Trusted',
 ];
 
-export default function About() {
+
   return (
     <section className="relative py-20 bg-gradient-to-br from-light via-white to-accent/10 overflow-hidden" id="about" data-aos="fade-up">
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-center gap-12">
@@ -42,3 +44,4 @@ export default function About() {
     </section>
   );
 } 
+export default About;

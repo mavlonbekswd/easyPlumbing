@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import { FaUser, FaHistory, FaCreditCard, FaCalendarAlt, FaCog, FaSignOutAlt, FaBell, FaFileInvoice } from 'react-icons/fa';
 
-export default function CustomerPortal() {
+const CustomerPortal = () => {
   const [activeTab, setActiveTab] = useState('dashboard');
-  const [notifications, setNotifications] = useState([
+  const [notifications, ] = useState([
     { id: 1, message: 'Your appointment is confirmed for tomorrow', time: '2 hours ago', read: false },
     { id: 2, message: 'Payment received for service #1234', time: '1 day ago', read: true },
     { id: 3, message: 'New service available in your area', time: '3 days ago', read: false },
@@ -211,3 +211,5 @@ export default function CustomerPortal() {
     </div>
   );
 } 
+
+export default CustomerPortal;
