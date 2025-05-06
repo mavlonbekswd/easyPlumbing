@@ -70,7 +70,7 @@ export default function Header() {
           ))}
         </ul>
         {/* Desktop Call Us Button */}
-        <a href="#contact" className="hidden md:flex items-center gap-2 bg-accent text-light px-5 py-2 rounded-lg font-semibold hover:bg-dark transition-colors shadow-lg animate-bounce">
+        <a href="tel:08002088822" className="hidden md:flex items-center gap-2 bg-accent text-light px-5 py-2 rounded-lg font-semibold hover:bg-dark transition-colors shadow-lg animate-bounce">
           <FaPhoneAlt /> Call Us
         </a>
         {/* Hamburger Icon - Mobile Only */}
@@ -110,7 +110,7 @@ export default function Header() {
             ))}
           {/* Call Us Button in Mobile Menu */}
     <div className="p-4 border-t border-gray-200">
-            <a href="#contact" className="flex items-center justify-center gap-2 bg-accent text-light px-5 py-3 rounded-lg font-semibold hover:bg-dark transition-colors shadow-lg">
+            <a href="tel:08002088822" className="flex items-center justify-center gap-2 bg-accent text-light px-5 py-3 rounded-lg font-semibold hover:bg-dark transition-colors shadow-lg">
               <FaPhoneAlt /> Call Us
             </a>
           </div>
@@ -151,7 +151,7 @@ export default function Header() {
           <p className="text-xl md:text-2xl mb-4 max-w-2xl opacity-90">Your trusted partner for all plumbing needs. Fast, reliable, and always there when you need us.</p>
           {/* Buttons Row */}
           <div className="flex flex-col sm:flex-row gap-4 sm:w-auto justify-center md:justify-start">
-            <a href="tel:+1234567890" className="flex items-center justify-center gap-2 bg-white/90 hover:bg-accent/20 text-accent font-bold py-3 px-6 sm:py-4 sm:px-10 rounded-xl text-xl shadow-xl border-2 border-accent transition-transform transform hover:scale-105 focus:scale-105 w-full sm:w-auto">
+            <a href="tel:08002088822" className="flex items-center justify-center gap-2 bg-white/90 hover:bg-accent/20 text-accent font-bold py-3 px-6 sm:py-4 sm:px-10 rounded-xl text-xl shadow-xl border-2 border-accent transition-transform transform hover:scale-105 focus:scale-105 w-full sm:w-auto">
               <FaPhoneAlt /> Call Us
             </a>
             <a href="#contact" className="flex items-center justify-center gap-2 bg-accent hover:bg-dark text-light font-bold py-3 px-6 sm:py-4 sm:px-10 rounded-xl text-xl shadow-xl transition-transform transform hover:scale-105 focus:scale-105 animate-pulse w-full sm:w-auto">

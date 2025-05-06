@@ -19,10 +19,10 @@ export default function Contact() {
           {/* Contact Details */}
           <div className="flex flex-col gap-4 w-full">
             <div className="flex items-center gap-3 text-lg">
-              <FaPhoneAlt className="text-accent" /> <span className="font-semibold">+1 234 567 890</span>
+              <FaPhoneAlt className="text-accent" /> <span className="font-semibold">08002088822</span>
             </div>
             <div className="flex items-center gap-3 text-lg">
-              <FaEnvelope className="text-accent" /> <span className="font-semibold">info@easyplumbing.com</span>
+              <FaEnvelope className="text-accent" /> <span className="font-semibold">easyplumbing33@gmail.com</span>
             </div>
             <div className="flex items-center gap-3 text-lg">
               <FaMapMarkerAlt className="text-accent" /> <span className="font-semibold">123 High St, Slough, SL1 1AA</span>
