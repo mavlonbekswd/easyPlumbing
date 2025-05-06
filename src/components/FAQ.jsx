@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { FaChevronDown, FaQuestionCircle, FaPhoneAlt, FaTools, FaWater, FaUserCheck, FaBolt, FaToiletPaper, FaShower, FaMapMarkerAlt, FaSearch, FaVideo, FaComment, FaTimes } from 'react-icons/fa';
 
 const faqs = [

@@ -15,7 +15,7 @@ export default function About() {
         <div className="flex flex-col items-center md:items-start w-full md:w-1/3">
           <div className="bg-accent/10 rounded-2xl p-4 sm:p-8 mb-6 shadow-lg border-2 border-accent flex flex-col items-center max-w-xs mx-auto w-full">
             
-          <img src="/public/teams.png" alt="Plumber man" className="w-40 h-52 xs:w-48 xs:h-60 sm:w-56 sm:h-72 md:w-64 md:h-96 object-cover rounded-2xl shadow-xl bg-white/30 relative z-10" />
+          <img src="/teams.png" alt="Plumber man" className="w-40 h-52 xs:w-48 xs:h-60 sm:w-56 sm:h-72 md:w-64 md:h-96 object-cover rounded-2xl shadow-xl bg-white/30 relative z-10" />
           </div>
         </div>
         {/* Text Right */}

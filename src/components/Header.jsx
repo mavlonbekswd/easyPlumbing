@@ -13,7 +13,7 @@ const navLinks = [
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [isLoading, setIsLoading] = useState(true);
+  const [ setIsLoading] = useState(true);
 
   useEffect(() => {
     // Simulate loading time
@@ -128,7 +128,7 @@ export default function Header() {
           <div className="absolute -bottom-4 -right-4 w-24 h-24 xs:w-32 xs:h-32 md:w-48 md:h-48 rounded-full bg-accent/30 blur-2xl opacity-70 animate-pulse z-0"></div>
           {/* Plumber Image */}
           <img
-            src="/public/header-img.png"
+            src="/header-img.png"
             alt="Plumber man"
             className="w-40 h-52 xs:w-48 xs:h-60 sm:w-56 sm:h-72 md:w-64 md:h-96 object-cover rounded-2xl shadow-xl bg-white/30 relative z-10"
           />

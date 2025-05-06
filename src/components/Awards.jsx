@@ -15,11 +15,7 @@ const awards = [
   },
 ];
 
-const featured = [
-  { name: 'HomeAdvisor', logo: 'https://cdn.worldvectorlogo.com/logos/homeadvisor-1.svg' },
-  { name: 'Angi', logo: 'https://cdn.worldvectorlogo.com/logos/angi.svg' },
-  { name: 'Yelp', logo: 'https://cdn.worldvectorlogo.com/logos/yelp-icon.svg' },
-];
+
 
 export default function Awards() {
   return (
