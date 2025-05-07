@@ -22,7 +22,7 @@ const steps = [
   'Confirm',
 ];
 
-export default function SmartScheduler() {
+const SmartScheduler = () => {
   const [step, setStep] = useState(0);
   const [selectedService, setSelectedService] = useState(null);
   const [selectedDate, setSelectedDate] = useState(null);
@@ -285,3 +285,4 @@ export default function SmartScheduler() {
     </div>
   );
 } 
+export default SmartScheduler;

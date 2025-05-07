@@ -48,7 +48,7 @@ const services = [
   },
 ];
 
-export default function Services() {
+const Services = () => {
   const [selected, setSelected] = useState(null);
 
   return (
@@ -126,3 +126,4 @@ export default function Services() {
     </section>
   );
 } 
+export default Services;

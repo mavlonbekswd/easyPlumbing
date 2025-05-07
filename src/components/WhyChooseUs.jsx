@@ -24,7 +24,7 @@ function useCountUp(end, duration = 1200) {
   return ref;
 }
 
-export default function WhyChooseUs() {
+const WhyChooseUs = () => {
   const ratingRef = useCountUp(4.9, 1000);
   const certifiedRef = useCountUp(100, 1000);
   const serviceRef = useCountUp(24, 1000);
@@ -78,3 +78,4 @@ export default function WhyChooseUs() {
     </section>
   );
 } 
+export default WhyChooseUs;

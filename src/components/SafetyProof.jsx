@@ -23,7 +23,7 @@ const pillars = [
   },
 ];
 
-export default function SafetyProof() {
+const SafetyProof = () => {
   return (
     <section className="relative py-20 bg-[#606C38]" id="safety" data-aos="fade-up">
       <div className="container mx-auto flex flex-col items-center">
@@ -54,3 +54,4 @@ export default function SafetyProof() {
     </section>
   );
 } 
+export default SafetyProof;

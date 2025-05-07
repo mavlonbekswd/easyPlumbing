@@ -46,7 +46,7 @@ const testimonials = [
   },
 ];
 
-export default function Trustpilot() {
+const Trustpilot = () => {
   const [idx, setIdx] = useState(0);
   const [activeGroup, setActiveGroup] = useState(0);
   const groups = Math.ceil(testimonials.length / 3);
@@ -193,3 +193,5 @@ export default function Trustpilot() {
     </section>
   );
 } 
+
+export default Trustpilot;
