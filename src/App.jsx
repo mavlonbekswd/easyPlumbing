@@ -16,7 +16,7 @@ import WhyChooseUs from './components/WhyChooseUs'
 import ContactAndBook from './components/ContactAndBook'
 
 import LiveChat from './components/LiveChat'
-import LoadingScreen from './components/LoadingScreen'
+
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -29,8 +29,7 @@ function App() {
 
   return (
     <div className="bg-light text-secondary font-sans">
-      {isLoading && <LoadingScreen />}
-      {!isLoading && (
+      
         <>
           <Header />
           <WhyChooseUs />
@@ -45,7 +44,7 @@ function App() {
           <LiveChat />
           <Footer />
         </>
-      )}
+      )
     </div>
   )
 }

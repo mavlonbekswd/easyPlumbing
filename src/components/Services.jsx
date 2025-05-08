@@ -55,11 +55,11 @@ const Services = () => {
 <section className="py-20 bg-[#606C38]" id="services" data-aos="fade-up">
       <div className="container mx-auto relative z-10">
         <h2 className="text-3xl font-bold text-center text-light mb-12">Our Services</h2>
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-8">
           {services.map((s, i) => (
             <button
               key={i}
-              className={`relative bg-light p-4 sm:p-6 md:p-6 rounded-2xl shadow-lg flex flex-col items-center w-full sm:max-w-full sm:mx-0 max-w-xs mx-auto focus:outline-none hover:shadow-2xl transition-all group border-2 border-transparent hover:border-accent hover:scale-105 duration-200`}
+              className="relative bg-light p-4 sm:p-6 rounded-2xl shadow-lg flex flex-col items-center w-full focus:outline-none hover:shadow-2xl transition-all group border-2 border-transparent hover:border-accent hover:scale-105 duration-200"
               data-aos="zoom-in"
               data-aos-delay={i*100}
               onClick={() => setSelected(i)}
@@ -89,8 +89,8 @@ const Services = () => {
         </div>
         {/* Modal */}
         {selected !== null && (
-          <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 px-4" onClick={() => setSelected(null)}>
-            <div className="bg-white rounded-3xl shadow-2xl max-w-md w-full p-0 overflow-hidden relative animate-fade-in" onClick={e => e.stopPropagation()}>
+          <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 p-4" onClick={() => setSelected(null)}>
+            <div className="bg-white rounded-3xl shadow-2xl w-full max-w-md p-0 overflow-hidden relative animate-fade-in" onClick={e => e.stopPropagation()}>
               {/* Modal Header */}
               <div className="bg-gradient-to-r from-primary to-accent p-6 flex flex-col items-center">
                 <div className="text-6xl text-light mb-2 animate-float">{services[selected].icon}</div>

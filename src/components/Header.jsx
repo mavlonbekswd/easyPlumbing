@@ -64,7 +64,7 @@ const Header = () => {
             <span className="font-bold text-xl flex items-center gap-2"><FaTools className="text-accent" /> EasyPlumbing</span>
             <button className="text-2xl p-2 hover:text-accent transition-colors" onClick={() => setMenuOpen(false)} aria-label="Close menu"><FaTimes /></button>
           </div>
-  <ul className="flex flex-col h-[900px] bg-light gap-2 p-9">
+  <ul className="flex flex-col h-auto max-h-[80vh] overflow-y-auto bg-light gap-2 p-9">
             {navLinks.map(link => (
               <li key={link.href}>
                 <a

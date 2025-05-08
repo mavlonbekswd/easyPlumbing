@@ -3,9 +3,9 @@ import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaUser, FaCalendarAlt, FaClock,
 const Contact = () => {
   return (
     <section className="relative py-[-20px] bg-light to-accent/10 overflow-hidden" id="contact" data-aos="fade-up">
-      <div className="container mx-auto max-w-4xl rounded-3xl shadow-xl bg-white/90 p-8 md:p-16 flex flex-col md:flex-row gap-12 items-center animate-fade-in">
+      <div className="container mx-auto max-w-4xl rounded-3xl shadow-xl bg-white/90 p-4 sm:p-8 md:p-16 flex flex-col md:flex-row gap-8 md:gap-12 items-center animate-fade-in">
         {/* Contact Info */}
-        <div className="w-full md:w-1/2 flex flex-col gap-6 items-center md:items-start text-center md:text-left">
+        <div className="w-full md:w-1/2 flex flex-col gap-4 md:gap-6 items-center md:items-start text-center md:text-left">
           <h2 className="text-3xl md:text-4xl font-extrabold text-secondary mb-2 flex items-center gap-2">
             <FaPhoneAlt className="text-accent" /> Contact Us
           </h2>
@@ -58,14 +58,16 @@ const Contact = () => {
           </div>
         </div>
         {/* Contact Form */}
-        <form className="w-full md:w-1/2 bg-light rounded-2xl shadow p-8 flex flex-col gap-6">
-          <div className="flex flex-col gap-2">
-            <label className="text-primary font-semibold flex items-center gap-2" htmlFor="name"><FaUser className="text-accent" /> Name</label>
-            <input id="name" type="text" className="p-3 rounded-lg border border-gray-200 focus:border-accent focus:outline-none" placeholder="Your Name" />
-          </div>
-          <div className="flex flex-col gap-2">
-            <label className="text-primary font-semibold flex items-center gap-2" htmlFor="email"><FaEnvelope className="text-accent" /> Email</label>
-            <input id="email" type="email" className="p-3 rounded-lg border border-gray-200 focus:border-accent focus:outline-none" placeholder="you@email.com" />
+        <form className="w-full md:w-1/2 flex flex-col gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div className="flex flex-col gap-2">
+              <label className="text-primary font-semibold flex items-center gap-2" htmlFor="name"><FaUser className="text-accent" /> Name</label>
+              <input id="name" type="text" className="p-3 rounded-lg border border-gray-200 focus:border-accent focus:outline-none" />
+            </div>
+            <div className="flex flex-col gap-2">
+              <label className="text-primary font-semibold flex items-center gap-2" htmlFor="email"><FaEnvelope className="text-accent" /> Email</label>
+              <input id="email" type="email" className="p-3 rounded-lg border border-gray-200 focus:border-accent focus:outline-none" />
+            </div>
           </div>
           <div className="flex flex-col gap-2">
             <label className="text-primary font-semibold flex items-center gap-2" htmlFor="service"><FaTools className="text-accent" /> Service Type</label>

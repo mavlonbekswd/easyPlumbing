@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { FaStar, FaQuoteLeft, FaUserCircle, FaCheckCircle } from 'react-icons/fa';
+import { FaStar, FaQuoteLeft, FaUserCircle, FaCheckCircle, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
 const testimonials = [
   {
@@ -75,8 +75,8 @@ const Trustpilot = () => {
         <h2 className="text-3xl md:text-4xl font-extrabold text-secondary mb-12 text-center">What Our Customers Say</h2>
         
         {/* Mobile View - Single Card with Navigation */}
-        <div className="md:hidden relative w-full max-w-xl mx-auto">
-          <div className="bg-light rounded-3xl shadow-xl p-4 flex flex-col items-center text-center animate-fade-in">
+        <div className="md:hidden relative w-full max-w-xl mx-auto px-4">
+          <div className="bg-light rounded-3xl shadow-xl p-4 sm:p-6 flex flex-col items-center text-center animate-fade-in">
             <FaQuoteLeft className="text-accent text-3xl mb-4" />
             <p className="text-lg font-semibold text-gray-800 mb-6">{testimonials[idx].text}</p>
             <div className="flex items-center gap-4 mb-4">
@@ -102,30 +102,20 @@ const Trustpilot = () => {
           </div>
           
           {/* Mobile Navigation Controls */}
-          <div className="flex justify-center items-center gap-4 mt-6">
+          <div className="flex justify-center gap-4 mt-6">
             <button
-              className="bg-white border border-accent text-accent rounded-full w-10 h-10 flex items-center justify-center shadow hover:bg-accent hover:text-light transition-colors duration-200"
-              onClick={() => setIdx((idx - 1 + 6) % 6)}
+              onClick={prev}
+              className="p-2 rounded-full bg-accent/10 text-accent hover:bg-accent hover:text-light transition-colors"
               aria-label="Previous testimonial"
             >
-              &#8592;
+              <FaChevronLeft className="text-xl" />
             </button>
-            <div className="flex gap-2">
-              {[...Array(6)].map((_, i) => (
-                <button
-                  key={i}
-                  className={`w-3 h-3 rounded-full ${i === idx ? 'bg-accent' : 'bg-gray-300'} transition-colors`}
-                  onClick={() => setIdx(i)}
-                  aria-label={`Go to testimonial ${i + 1}`}
-                />
-              ))}
-            </div>
             <button
-              className="bg-white border border-accent text-accent rounded-full w-10 h-10 flex items-center justify-center shadow hover:bg-accent hover:text-light transition-colors duration-200"
-              onClick={() => setIdx((idx + 1) % 6)}
+              onClick={next}
+              className="p-2 rounded-full bg-accent/10 text-accent hover:bg-accent hover:text-light transition-colors"
               aria-label="Next testimonial"
             >
-              &#8594;
+              <FaChevronRight className="text-xl" />
             </button>
           </div>
         </div>
