@@ -44,12 +44,12 @@ const Footer = () => {
       {/* Back to Top Button */}
       <button
         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-        className="fixed bottom-6 right-6 bg-accent text-light p-3 rounded-full shadow-lg hover:bg-dark transition-colors z-49 animate-fade-in"
+        className="fixed bottom-6 right-6 bg-accent text-light p-3 rounded-full shadow-lg hover:bg-dark transition-colors z-50 animate-fade-in"
         aria-label="Back to top"
       >
         <FaArrowUp className="text-xl" />
       </button>
     </footer>
   );
-} 
+}
 export default Footer;

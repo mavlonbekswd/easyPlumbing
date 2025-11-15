@@ -10,7 +10,7 @@ import Trustpilot from './components/Trustpilot'
 import MapSection from './components/MapSection'
 import Awards from './components/Awards'
 import FAQ from './components/FAQ'
-
+import Reviews from "./components/Reviews";
 import Footer from './components/Footer'
 import WhyChooseUs from './components/WhyChooseUs'
 import ContactAndBook from './components/ContactAndBook'
@@ -29,14 +29,15 @@ function App() {
 
   return (
     <div className="bg-light text-secondary font-sans">
-      
+
         <>
           <Header />
           <WhyChooseUs />
           <Services />
           <About />
           <SafetyProof />
-          <Trustpilot />
+          <Reviews />
+
           <Awards />
           <MapSection />
           <ContactAndBook />
@@ -44,7 +45,7 @@ function App() {
           <LiveChat />
           <Footer />
         </>
-      )
+      
     </div>
   )
 }

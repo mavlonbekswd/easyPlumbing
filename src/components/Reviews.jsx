@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const Trustpilot = () => {
+const Reviews = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [hasError, setHasError] = useState(false);
 
@@ -126,4 +126,4 @@ const Trustpilot = () => {
   );
 };
 
-export default Trustpilot;
+export default Reviews;

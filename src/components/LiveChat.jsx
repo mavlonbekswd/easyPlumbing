@@ -57,13 +57,14 @@ export default function LiveChat() {
     <>
       {/* Chat Button */}
       <button
-        onClick={() => setIsOpen(true)}
-    className="fixed bottom-6 left-6 bg-accent z-59 text-white p-4 rounded-full shadow-lg hover:bg-dark transition-colors flex items-center gap-2"
-        aria-label="Open live chat"
-      >
-        <FaUser className="text-xl " />
-        <span className="hidden sm:inline">Chat Support</span>
-      </button>
+  onClick={() => setIsOpen(true)}
+  className="fixed bottom-6 left-6 bg-accent z-[99999] text-white p-4 rounded-full shadow-lg hover:bg-dark transition-colors flex items-center gap-2"
+  aria-label="Open live chat"
+>
+  <FaUser className="text-xl " />
+  <span className="hidden sm:inline">Chat Support</span>
+</button>
+
 
       {/* Chat Window */}
       {isOpen && (
@@ -173,4 +174,4 @@ export default function LiveChat() {
       )}
     </>
   );
-} 
+}

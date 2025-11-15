@@ -5,7 +5,7 @@ const navLinks = [
   { href: '#services', label: 'Services' },
   { href: '#about', label: 'About' },
   { href: '#safety', label: 'Safety & Proof' },
-  { href: '#trustpilot', label: 'Trustpilot' },
+  { href: '#reviews', label: 'Reviews' },
   { href: '#awards', label: 'Awards' },
   { href: '#faq', label: 'FAQ' },
   { href: '#contact', label: 'Contact' },
@@ -14,7 +14,7 @@ const navLinks = [
 const Header = () => {
 
   const [menuOpen, setMenuOpen] = useState(false);
-  
+
 
 
   return (
@@ -74,7 +74,7 @@ const Header = () => {
                 >
                   {link.label}
                 </a>
-                
+
               </li>
 
             ))}
@@ -85,7 +85,7 @@ const Header = () => {
             </a>
           </div>
           </ul>
-         
+
         </div>
       </nav>
       {/* Hero Content */}
